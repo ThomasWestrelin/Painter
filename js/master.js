@@ -5,6 +5,7 @@ function include(script_filename) {
     document.write('</' + 'script' + '>');
 }
 
+include('textFieldEnter.js');
 include('var.js');
 include('draw.js');
 include('setLineWidth.js');

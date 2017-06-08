@@ -24,3 +24,8 @@ body
   margin: auto;
   text-align: center;
 }
+
+#lineWidthValue
+{
+  text-align: center;
+}
