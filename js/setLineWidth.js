@@ -1,15 +1,17 @@
 function setLineWidth(value) {
-  canvas.lineWidth = value;
+  if (value) {
+    canvas.lineWidth++;
+  }
+  else {
+    canvas.lineWidth--;
+  }
 }
 
-document.getElementById('lw1').addEventListener('mousedown', function(event) {
-  setLineWidth(1);
+
+document.getElementById('lower').addEventListener('mousedown', function(event) {
+  setLineWidth(false);
 });
 
-document.getElementById('lw2').addEventListener('mousedown', function(event) {
-  setLineWidth(5);
-});
-
-document.getElementById('lw3').addEventListener('mousedown', function(event) {
-  setLineWidth(10);
+document.getElementById('upper').addEventListener('mousedown', function(event) {
+  setLineWidth(true);
 });
