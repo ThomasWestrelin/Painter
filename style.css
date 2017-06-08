@@ -1,5 +1,6 @@
 body
 {
+
 }
 #c1
 {
@@ -15,4 +16,8 @@ body
 
 .content
 {
+  width: 500px;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
