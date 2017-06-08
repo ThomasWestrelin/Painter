@@ -5,6 +5,7 @@ function include(script_filename) {
     document.write('</' + 'script' + '>');
 }
 
+include('colorPicker.js')
 include('textFieldEnter.js');
 include('var.js');
 include('draw.js');

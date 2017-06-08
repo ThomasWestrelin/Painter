@@ -4,28 +4,31 @@
     <meta charset="utf-8">
     <title>Painter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://bgrins.github.io/spectrum/spectrum.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://bgrins.github.io/spectrum/spectrum.js"></script>
+
   </head>
   <body>
     <div class="content">
       <h1>Painter</h1>
       <canvas id="c1" width="500" height="500"></canvas>
       <button id="clear" type="button" name="button" onclick="canvas.clearRect(0,0,500,500);">Clear</button>
+      <button id="del" type="button" name="button" onclick="setLineColor('#ffffff');">Del</button>
       <h2>Line width: </h2>
       <div class="line_width">
         <button id="lower" type="button" name="button">-</button>
         <input id="lineWidthValue" type="text" value="1" size="1" onkeypress="return textFieldEnterLineWidth(event)">
         <button id="upper" type="button" name="button">+</button>
       </div>
-      <h2>Colors: </h2>
       <div class="line_color">
-        <canvas id="lc_black" width="100" height="50"></canvas>
-        <canvas id="lc_blue" width="100" height="50"></canvas>
-        <canvas id="lc_red" width="100" height="50"></canvas>
+        <input id="colorCustom" type='text' value='#000000' />
       </div>
     </div>
 
 
     <script type="text/javascript" src="./js/master.js"></script>
+
   </body>
 </html>
 <canvas id="l_current" width="100" height="50"></canvas>
