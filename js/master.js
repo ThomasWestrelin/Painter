@@ -8,6 +8,7 @@ function include(script_filename) {
 include('colorPicker.js')
 include('textFieldEnter.js');
 include('var.js');
+include('drawCurrentLine.js');
 include('draw.js');
 include('setLineWidth.js');
 include('setLineColor.js');

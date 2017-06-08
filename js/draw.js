@@ -1,4 +1,5 @@
 var click = false;
+drawCurrentLine();
 
 document.getElementById('c1').addEventListener('mousemove', function(event) {
   if (click) {

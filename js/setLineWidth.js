@@ -9,8 +9,8 @@ function setLineWidth(value) {
 }
 
 function setLineWidthEnterField(value) {
-  if (value >= 50) {
-    value = 50;
+  if (value >= 25) {
+    value = 25;
   }
   else if (value < 0) {
     value = 1;

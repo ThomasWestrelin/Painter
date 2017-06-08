@@ -15,7 +15,8 @@
       <canvas id="c1" width="500" height="500"></canvas>
       <button id="clear" type="button" name="button" onclick="canvas.clearRect(0,0,500,500);">Clear</button>
       <button id="del" type="button" name="button" onclick="setLineColor('#ffffff');">Del</button>
-      <h2>Line width: </h2>
+      <br/>
+      <canvas id="l_current" width="100" height="50"></canvas>
       <div class="line_width">
         <button id="lower" type="button" name="button">-</button>
         <input id="lineWidthValue" type="text" value="1" size="1" onkeypress="return textFieldEnterLineWidth(event)">
