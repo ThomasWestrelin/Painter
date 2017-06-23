@@ -5,6 +5,12 @@ function setLineWidth(value) {
   else {
     canvas.lineWidth--;
   }
+  if (canvas.lineWidth >= 25) {
+    canvas.lineWidth = 25;
+  }
+  else if (canvas.lineWidth < 0) {
+    canvas.lineWidth = 1;
+  }
   document.getElementById('lineWidthValue').value = canvas.lineWidth;
   drawCurrentLine();
 }
