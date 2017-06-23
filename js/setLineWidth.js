@@ -6,6 +6,7 @@ function setLineWidth(value) {
     canvas.lineWidth--;
   }
   document.getElementById('lineWidthValue').value = canvas.lineWidth;
+  drawCurrentLine();
 }
 
 function setLineWidthEnterField(value) {
@@ -17,6 +18,7 @@ function setLineWidthEnterField(value) {
   }
   canvas.lineWidth = value;
   document.getElementById('lineWidthValue').value = value;
+  drawCurrentLine();
 }
 
 document.getElementById('lower').addEventListener('mousedown', function(event) {
